@@ -1,46 +1,14 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import ChartHeaderSettings from '../../headers/chartHeaderSettings/ChartHeaderSettings';
+import ReactApexChart from 'react-apexcharts';
+import { AutoSizer } from 'react-virtualized';
+import ChartFooter from '../../footer/chartFooter/ChartFooter';
+import { customerData } from '../../../data/customer';
 import './CustomerGrowth.scss';
-import ChartHeaderSettings from "../../headers/chartHeaderSettings/ChartHeaderSettings";
-import ReactApexChart from "react-apexcharts";
-import {AutoSizer} from "react-virtualized";
-import ChartFooter from "../../footer/chartFooter/ChartFooter";
-
 
 
 const CustomerGrowth = () => {
-
-  const [chart] = useState({
-    series: [76, 67, 61],
-    options: {
-      chart: {
-        type: 'radialBar',
-      },
-      plotOptions: {
-        radialBar: {
-          offsetY: 0,
-          startAngle: -90,
-          endAngle: 270,
-          expandOnClick: false,
-          hollow: {
-            margin: 10,
-            size: '50%',
-            background: 'transparent',
-            image: undefined,
-          },
-          dataLabels: {
-            name: {
-              show: false,
-            },
-            value: {
-              show: false,
-            },
-          }
-        }
-      },
-      colors: ['#00CCF9', '#0987E1', '#1900B4'],
-    },
-  })
-
+  const [chart] = useState(customerData)
 
   return (
     <div className="customer">

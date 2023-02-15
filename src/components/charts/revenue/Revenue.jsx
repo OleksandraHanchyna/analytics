@@ -1,6 +1,6 @@
 import React from 'react';
-import ChartHeaderSettings from "../../headers/chartHeaderSettings/ChartHeaderSettings";
-import { data } from "../../../data/revenue";
+import ChartHeaderSettings from '../../headers/chartHeaderSettings/ChartHeaderSettings';
+import { data } from '../../../data/revenue';
 import './Revenue.scss';
 
 const Revenue = () => {

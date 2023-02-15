@@ -1,5 +1,5 @@
 import React from 'react';
-import { flagsSrc } from "../../../../data/trendingLocation";
+import { flagsSrc } from '../../../../data/trendingLocation';
 import increase from './../../../../icons/button/increase-arrow.svg';
 import decrease from './../../../../icons/button/decrease-arrow.svg';
 import './TrendingLocationItem.scss';
@@ -9,7 +9,7 @@ const TrendingLocationItem = ({ countryCode, city, countVisits, isGrow }) => {
     <div className="location-item">
       <div className="location-item__country">
         <div className="location-item__country-flag">
-          <img src={flagsSrc[countryCode]} alt=""/>
+          <img src={flagsSrc[countryCode]} alt="" />
         </div>
       </div>
       <div className="location-item__city">
@@ -19,7 +19,7 @@ const TrendingLocationItem = ({ countryCode, city, countVisits, isGrow }) => {
         <p>{countVisits}</p>
       </div>
       <div className="location-item__grow">
-        <img src={isGrow ? increase : decrease}/>
+        <img src={isGrow ? increase : decrease} alt="" />
       </div>
     </div>
   );

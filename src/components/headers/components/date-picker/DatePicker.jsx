@@ -5,7 +5,7 @@ import './DatePicker.scss';
 const DatePicker = () => {
   return (
     <div className="date-picker">
-      <img src={date_picker} />
+      <img src={date_picker} alt="" />
     </div>
   );
 };

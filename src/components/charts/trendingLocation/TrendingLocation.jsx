@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import ChartHeaderSettings from "../../headers/chartHeaderSettings/ChartHeaderSettings";
-import TrendingLocationItem from "./item/TrendingLocationItem";
+import React, { useEffect, useState } from 'react';
+import ChartHeaderSettings from '../../headers/chartHeaderSettings/ChartHeaderSettings';
+import TrendingLocationItem from './item/TrendingLocationItem';
 import sort from './../../../icons/button/sort.svg';
-import { defaultTrendingLocation, visibleItems } from "../../../data/trendingLocation";
+import { defaultTrendingLocation, visibleItems } from '../../../data/trendingLocation';
 import './TrendingLocation.scss';
 
 const TrendingLocation = () => {
