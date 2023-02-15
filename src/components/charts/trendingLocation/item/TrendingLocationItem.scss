@@ -1,0 +1,47 @@
+.location-item {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #DDE3E9;
+  width: 100%;
+
+  &__country {
+    width: 25%;
+
+    &-flag {
+      margin: 0 auto;
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &__city {
+    text-align: start;
+    margin-left: 30px;
+    width: 50%;
+  }
+
+  &__visits {
+    width: 20%;
+    margin: 0 8px 0 15px;
+    text-align: center;
+  }
+
+  &__grow {
+    width: 15px;
+    height: 15px;
+    margin-right: 23px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #7F8694;
+  }
+}

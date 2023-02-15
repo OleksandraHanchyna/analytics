@@ -1,0 +1,40 @@
+.chart-footer {
+  width: 100%;
+  height: 30px;
+  border-top: 1px solid #DDE3E9;
+  margin-top: auto;
+  margin-bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    width: calc(100% / 3);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #242262;
+
+    &__span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #6F6F6F;
+      margin-right: 10px;
+    }
+  }
+}
+
+.dark-blue {
+  background: #1900B4;
+}
+
+.blue {
+  background: #0987E1;
+}
+
+.light-blue {
+  background: #00CCF9;
+}

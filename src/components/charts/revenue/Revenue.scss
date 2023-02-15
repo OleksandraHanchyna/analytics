@@ -1,0 +1,63 @@
+@import '../../../style/_variables';
+
+.revenue {
+  width: 100%;
+  height: auto;
+
+  &__body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 18px 15px;
+
+    &__item {
+      width: 50%;
+      text-align: left;
+      margin: auto 10px;
+
+      &__title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #7F8694;
+        margin: 0;
+      }
+
+      &__value {
+        display: flex;
+        align-items: center;
+        margin: 2px;
+      }
+
+      &-pounds {
+        margin: 0;
+        font-weight: 400;
+        font-size: 17.5px;
+        line-height: 21px;
+        letter-spacing: 0.1em;
+        color: #21252C;
+      }
+
+      &-percent {
+        margin: 0 0 0 10px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #81BE00;
+      }
+
+      @media screen and (max-width: $md-screen) {
+        text-align: center;
+
+        &__value {
+          flex-direction: column;
+          margin: 0;
+        }
+
+        &-percent {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import '../../../style/_variables';
+
+.leads {
+  width: 100%;
+  height: auto;
+  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  &__table {
+    min-width: $xs-screen;
+
+    &__header{
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #6F6F6F;
+
+      &__item {
+        display: flex;
+        justify-content: flex-start;
+
+        &-img {
+          margin: auto 15px;
+        }
+      }
+    }
+
+    &__body {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5A5C5E;
+      text-align: left;
+    }
+
+    &__header,
+    &__body__item {
+      height: 50px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__source {
+      flex: 0.8;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__date,
+    &__quote {
+      flex: 1;
+    }
+
+    &__manager,
+    &__customer {
+      flex: 1.5;
+    }
+
+    &__manager {
+      margin-right: 25px;
+    }
+  }
+
+  @media screen and (max-width: $xs-screen) {
+
+  }
+}

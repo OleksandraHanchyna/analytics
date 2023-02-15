@@ -1,0 +1,53 @@
+.location {
+  width: 100%;
+  height: auto;
+
+  &__table {
+    width: 100%;
+
+    &__header {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 40px;
+
+      &-country {
+        min-width: 25%;
+      }
+
+      &-city {
+        min-width: 45%;
+      }
+
+      &__visits {
+        min-width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__sort {
+        margin: 10px;
+        &-down {
+          transform: rotate(0);
+        }
+
+        &-up {
+          transform: rotate(180deg);
+        }
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        color: #6F6F6F;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+}

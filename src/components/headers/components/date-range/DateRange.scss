@@ -1,0 +1,23 @@
+.date-range {
+
+  select {
+    height: 32px;
+    background: #FFFFFF;
+    border: 1.5px solid #DDE3E9;
+    border-radius: 5px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.5px;
+    line-height: 13px;
+    color: #7F8694;
+
+    option {
+      font-weight: 500;
+    }
+  }
+
+  select:focus-visible {
+    border: 1px solid blue;
+  }
+}
